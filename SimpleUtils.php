@@ -38,6 +38,15 @@ class SimpleUtils {
         $out = array_filter($out);
         return $out;
     }
+    
+
+    public static function getFormattedLogString($params) {
+        $timeStamp = date('Y-m-d H:i:s');
+        return "\n".$timeStamp.'!~!'.json_encode($params);
+    }
+
 }
+
+
 
 
